@@ -1,4 +1,4 @@
-package AulasLacos;
+package AulasLacosCondicionais;
 
 import java.util.Scanner;
 
