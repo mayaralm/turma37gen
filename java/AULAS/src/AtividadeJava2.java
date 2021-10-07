@@ -15,7 +15,7 @@ public class AtividadeJava2 {
 		dia = (dias % 365) % 30;
 
 		System.out.println("Você tem: " + ano + " anos " + mes + " meses e " + dia + " dias");
-
+		leia.close();
 	}
 
 }
