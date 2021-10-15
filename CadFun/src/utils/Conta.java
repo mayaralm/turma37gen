@@ -44,8 +44,8 @@ public abstract class Conta {
 		
 		return this.saldo;
 	}
-	public void ativarConta(boolean isAtive) {
-		this.isAtive = isAtive;
+	public void ativarConta() {
+		this.isAtive = true;
 	}
 	public void credito(double valor) {
 		this.saldo += valor;
