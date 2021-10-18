@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="CadFun/src"/>
+	<classpathentry kind="src" path="CadUsuario"/>
+	<classpathentry kind="src" path="java/AULAS/src"/>
+	<classpathentry kind="output" path="CadFun/bin"/>
+</classpath>
