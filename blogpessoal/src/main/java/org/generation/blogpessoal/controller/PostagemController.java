@@ -1,7 +1,7 @@
 package org.generation.blogpessoal.controller;
 
 import java.util.List;
-import java.util.Optional;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,9 +24,6 @@ import org.generation.blogpessoal.repository.PostagemRepository;
 @CrossOrigin("*")
 public class PostagemController {
 	
-	
-	
-	
 	@Autowired
 	private PostagemRepository repository;
 	
@@ -43,9 +40,9 @@ public class PostagemController {
 	
 	
 	
-	@GetMapping("/porTitulo/{titulo}")
-	public ResponseEntity<Postagem> getByTitulo(@PathVariable("titulo") String titulo){
-		return ResponseEntity.ok(repository.getByTituloContainingIgnoreCase(titulo));
+	@GetMapping("/titulo/{titulo}")
+	public ResponseEntity<List<Postagem>> GetByTitulo(@PathVariable String titulo){
+		return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(titulo));
 	}
 	
 	@PostMapping
